@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [OrangeHRMApplication]">
+  <test name="LoginTest">
+    <classes>
+      <class name="com.OrangeHRMTestNG.OrangeHRM_TestNG_Login"/>
+    </classes>
+  </test> <!-- LoginTest -->
+  <test name="AddEmployeeTest">
+    <classes>
+      <class name="com.OrangeHRMTestNG.OrangeHRM_AddEmployee"/>
+    </classes>
+  </test> <!-- AddEmployeeTest -->
+  <test name="EmpListExcelTest">
+    <classes>
+      <class name="com.OrangeHRMTestNG.OrangeHRM_EmployeeListintoExcel"/>
+    </classes>
+  </test> <!-- EmpListExcelTest -->
+  <test name="AddEmployeeTest(failed)">
+    <classes>
+      <class name="com.OrangeHRMTestNG.OrangeHRM_EmployeeListintoExcel">
+        <methods>
+          <include name="orangeHRMapplicationClose"/>
+          <include name="orangeHRMApplicationLunch"/>
+        </methods>
+      </class> <!-- com.OrangeHRMTestNG.OrangeHRM_EmployeeListintoExcel -->
+      <class name="com.OrangeHRMTestNG.OrangeHRM_TestNG_Login">
+        <methods>
+          <include name="orangeHRMapplicationClose"/>
+          <include name="orangeHRMApplicationLunch"/>
+        </methods>
+      </class> <!-- com.OrangeHRMTestNG.OrangeHRM_TestNG_Login -->
+      <class name="com.OrangeHRMTestNG.OrangeHRM_AddEmployee">
+        <methods>
+          <include name="orangeHRMapplicationClose"/>
+          <include name="orangeHRMApplicationLunch"/>
+          <include name="pimTAddEmpest"/>
+        </methods>
+      </class> <!-- com.OrangeHRMTestNG.OrangeHRM_AddEmployee -->
+    </classes>
+  </test> <!-- AddEmployeeTest(failed) -->
+  <test name="EmpListExcelTest(failed)">
+    <classes>
+      <class name="com.OrangeHRMTestNG.OrangeHRM_EmployeeListintoExcel">
+        <methods>
+          <include name="pimEmplListIntoExcelTest"/>
+          <include name="orangeHRMapplicationClose"/>
+          <include name="orangeHRMApplicationLunch"/>
+        </methods>
+      </class> <!-- com.OrangeHRMTestNG.OrangeHRM_EmployeeListintoExcel -->
+      <class name="com.OrangeHRMTestNG.OrangeHRM_TestNG_Login">
+        <methods>
+          <include name="orangeHRMapplicationClose"/>
+          <include name="orangeHRMApplicationLunch"/>
+        </methods>
+      </class> <!-- com.OrangeHRMTestNG.OrangeHRM_TestNG_Login -->
+      <class name="com.OrangeHRMTestNG.OrangeHRM_AddEmployee">
+        <methods>
+          <include name="orangeHRMapplicationClose"/>
+          <include name="orangeHRMApplicationLunch"/>
+        </methods>
+      </class> <!-- com.OrangeHRMTestNG.OrangeHRM_AddEmployee -->
+    </classes>
+  </test> <!-- EmpListExcelTest(failed) -->
+</suite> <!-- Failed suite [OrangeHRMApplication] -->

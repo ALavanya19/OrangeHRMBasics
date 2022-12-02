@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="75" started-at="2022-11-24T03:49:04Z" finished-at="2022-11-24T03:49:04Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="75" started-at="2022-11-24T03:49:04Z" finished-at="2022-11-24T03:49:04Z">
+      <class name="com.TestNGAnnotations.TestNGExample2">
+        <test-method status="PASS" signature="beforeTestex1()[pri:0, instance:com.TestNGAnnotations.TestNGExample2@7cdbc5d3]" name="beforeTestex1" is-config="true" duration-ms="17" started-at="2022-11-23T22:49:04Z" finished-at="2022-11-23T22:49:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTestex1 -->
+        <test-method status="PASS" signature="beforeMethodex2()[pri:0, instance:com.TestNGAnnotations.TestNGExample2@7cdbc5d3]" name="beforeMethodex2" is-config="true" duration-ms="1" started-at="2022-11-23T22:49:04Z" finished-at="2022-11-23T22:49:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethodex2 -->
+        <test-method status="PASS" signature="testEx1()[pri:0, instance:com.TestNGAnnotations.TestNGExample2@7cdbc5d3]" name="testEx1" duration-ms="16" started-at="2022-11-23T22:49:04Z" finished-at="2022-11-23T22:49:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEx1 -->
+        <test-method status="PASS" signature="afterMethodex2()[pri:0, instance:com.TestNGAnnotations.TestNGExample2@7cdbc5d3]" name="afterMethodex2" is-config="true" duration-ms="2" started-at="2022-11-23T22:49:04Z" finished-at="2022-11-23T22:49:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethodex2 -->
+        <test-method status="PASS" signature="afterTestex1()[pri:0, instance:com.TestNGAnnotations.TestNGExample2@7cdbc5d3]" name="afterTestex1" is-config="true" duration-ms="0" started-at="2022-11-23T22:49:04Z" finished-at="2022-11-23T22:49:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTestex1 -->
+      </class> <!-- com.TestNGAnnotations.TestNGExample2 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

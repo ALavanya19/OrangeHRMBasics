@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Orange HRM]" parallel="tests">
+  <test name="adminTest">
+    <classes>
+      <class name="com.OrangeHRM.TestNG_TestCase6"/>
+    </classes>
+  </test> <!-- adminTest -->
+  <test name="pimTest">
+    <classes>
+      <class name="com.OrangeHRM.TestNG_TestCase9"/>
+    </classes>
+  </test> <!-- pimTest -->
+  <test name="pimTest(failed)" parallel="tests">
+    <classes>
+      <class name="com.OrangeHRM.TestNG_TestCase6">
+        <methods>
+          <include name="orangeHRMApplicationLunch"/>
+        </methods>
+      </class> <!-- com.OrangeHRM.TestNG_TestCase6 -->
+      <class name="com.OrangeHRM.TestNG_TestCase9">
+        <methods>
+          <include name="LoginTest"/>
+          <include name="orangeHRMApplicationLunch"/>
+          <include name="pimTest"/>
+        </methods>
+      </class> <!-- com.OrangeHRM.TestNG_TestCase9 -->
+    </classes>
+  </test> <!-- pimTest(failed) -->
+  <test name="adminTest(failed)" parallel="tests">
+    <classes>
+      <class name="com.OrangeHRM.TestNG_TestCase6">
+        <methods>
+          <include name="orangeHRMAdminTest"/>
+          <include name="systemUsersResultsTableTest"/>
+          <include name="LoginTest"/>
+          <include name="orangeHRMAdminUserManagementTest"/>
+          <include name="orangeHRMApplicationLunch"/>
+        </methods>
+      </class> <!-- com.OrangeHRM.TestNG_TestCase6 -->
+      <class name="com.OrangeHRM.TestNG_TestCase9">
+        <methods>
+          <include name="orangeHRMApplicationLunch"/>
+        </methods>
+      </class> <!-- com.OrangeHRM.TestNG_TestCase9 -->
+    </classes>
+  </test> <!-- adminTest(failed) -->
+</suite> <!-- Failed suite [Orange HRM] -->
